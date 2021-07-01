@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My library -->
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <a href="#home" class="scrollTop">
+        <i class='bx bxs-up-arrow-square'></i>
+    </a>
+    <!-- Nav mobile -->
+    <div class="nav">
+        <div class="nav-mobile">
+            <div class="nav-wrap">
+                <a href="#about" class=" ">
+                    <div class="nav-menu  "><i class='bx bx-info-circle'></i></div>
+                </a>
+                <a href="#menu" class=" ">
+                    <div class="nav-menu"><i class='bx bx-food-menu'></i></div>
+                </a>
+                <a href="" class=" ">
+                    <div class="nav-menu active"><i class='bx bx-home'></i></div>
+                </a>
+                <a href="#service" class=" ">
+                    <div class="nav-menu"><i class='bx bx-cog'></i></div>
+                </a>
+                <a href="#testimonials" class=" ">
+                    <div class="nav-menu"><i class='bx bx-message-detail'></i></div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Nav mobile -->
+    <!-- Nav Pc -->
+    <nav class="">
+        <div class="nav-pc">
+            <div class="nav-brand">Love Food</div>
+            <div class="nav-wrap">
+                <a href="" class=" ">
+                    <div class="nav-menu active ">Home</div>
+                </a>
+                <a href="#about" class=" ">
+                    <div class="nav-menu">About</div>
+                </a>
+                <a href="#menu" class=" ">
+                    <div class="nav-menu">Menu</div>
+                </a>
+                <a href="#service" class=" ">
+                    <div class="nav-menu">Service</div>
+                </a>
+                <a href="#testimonials" class=" ">
+                    <div class="nav-menu">Testimonials</div>
+                </a>
+            </div>
+            <div class="nav-cart">
+                <div class="btn btn-cart">
+                    <i class='bx bx-cart-alt'></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Nav Pc -->
+    <!-- Home -->
+    <section id="home" class="full-height align-items-center bg-img bg-img-fixed" style="background-image: url('./assets/background-home.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-12 col-xs-12">
+                    <div class="slogan">
+                        <h1>Love Food</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis, excepturi delectus doloribus amet illum suscipit voluptate eum quos nostrum veritatis, corporis quisquam nam laudantium omnis maxime voluptatem nihil.
+                            Beatae!
+                        </p>
+                        <button>Order now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Home -->
+    <!-- Section About -->
+    <section id="about" class=" align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 col-xs-12 img-about">
+                    <img src="./assets/about.jpg" alt="" class="full-width">
+                </div>
+                <div class="col-5  col-xs-12 align-items-center content-about  ">
+                    <div class="about-slogan">
+                        <h3><span class="primary-color">We</span> create <span class="primary-color">delicious </span> memories <span class="primary-color">for you</span> </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit dolore deserunt libero, repellendus saepe velit nulla in provident harum totam molestiae autem inventore accusantium et cumque neque assumenda sapiente?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section About -->
+    <!-- Section Menu -->
+    <section id="menu" class="align-items-center bg-img bg-img-fixed" style="background-image: url(./assets/top-view-circular-food-frame.jpg);">
+        <div class="container">
+            <div class="food-menu">
+                <h1>What will you <span class="primary-color">eat</span> today ? </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum laudantium laboriosam veniam. Ipsa voluptatum nisi deserunt inventore rem blanditiis saepe, dolore labore in repellat reiciendis vero voluptate dolores rerum alias?</p>
+                <div class="food-category">
+                    <button class="active" data-food-type="all">All Foods</button>
+                    <button class="" data-food-type="pizza">Pizza</button>
+                    <button data-food-type="noodle">Noodle</button>
+                    <button data-food-type="rice">Rice</button>
+                    <button data-food-type="soup">Soup</button>
+                </div>
+                <div class="food-category__item">
+                    <div class=" col-3 col-md-6 col-xs-12 item-wrap pizza-type">
+                        <div class="img-item__wrap">
+                            <div class=" bg-img food-category__item--hover" style="background-image: url('./assets/menu-1.jpg');"></div>
+                        </div>
+                        <div class="food-category__item--info">
+                            <h3>Pizza hut</h3>
+                            <span>90$</span>
+                        </div>
+                        <div class="food-category__item-cart">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                    <div class=" col-3 col-md-6 col-xs-12 item-wrap noodle-type">
+                        <div class="img-item__wrap">
+                            <div class=" bg-img food-category__item--hover" style="background-image: url('./assets/menu-2.jpg');"></div>
+                        </div>
+                        <div class="food-category__item--info">
+                            <h3>Noodle</h3>
+                            <span>90$</span>
+                        </div>
+                        <div class="food-category__item-cart">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                    <div class=" col-3 col-md-6 col-xs-12 item-wrap rice-type">
+                        <div class="img-item__wrap">
+                            <div class=" bg-img food-category__item--hover" style="background-image: url('./assets/menu-3.jpg');"></div>
+                        </div>
+                        <div class="food-category__item--info">
+                            <h3>Pizza hut</h3>
+                            <span>90$</span>
+                        </div>
+                        <div class="food-category__item-cart">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                    <div class=" col-3 col-md-6 col-xs-12 item-wrap noodle-type">
+                        <div class="img-item__wrap">
+                            <div class=" bg-img food-category__item--hover" style="background-image: url('./assets/menu-4.jpg');"></div>
+                        </div>
+                        <div class="food-category__item--info">
+                            <h3>Pizza hut</h3>
+                            <span>90$</span>
+                        </div>
+                        <div class="food-category__item-cart">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                    <div class=" col-3 col-md-6 col-xs-12 item-wrap soup-type">
+                        <div class="img-item__wrap">
+                            <div class=" bg-img food-category__item--hover" style="background-image: url('./assets/menu-5.jpg');"></div>
+                        </div>
+                        <div class="food-category__item--info">
+                            <h3>Soup</h3>
+                            <span>90$</span>
+                        </div>
+                        <div class="food-category__item-cart">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                    <div class=" col-3 col-md-6 col-xs-12 item-wrap rice-type">
+                        <div class="img-item__wrap">
+                            <div class=" bg-img food-category__item--hover" style="background-image: url('./assets/menu-6.jpg');"></div>
+                        </div>
+                        <div class="food-category__item--info">
+                            <h3>Pizza hut</h3>
+                            <span>90$</span>
+                        </div>
+                        <div class="food-category__item-cart">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                    <div class=" col-3 col-md-6 col-xs-12 item-wrap soup-type">
+                        <div class="img-item__wrap">
+                            <div class=" bg-img food-category__item--hover" style="background-image: url('./assets/menu-7.jpg');"></div>
+                        </div>
+                        <div class="food-category__item--info">
+                            <h3>Pizza hut</h3>
+                            <span>90$</span>
+                        </div>
+                        <div class="food-category__item-cart">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                    <div class=" col-3 col-md-6 col-xs-12 item-wrap soup-type">
+                        <div class="img-item__wrap">
+                            <div class=" bg-img food-category__item--hover" style="background-image: url('./assets/menu-8.jpg');"></div>
+                        </div>
+                        <div class="food-category__item--info">
+                            <h3>Pizza hut</h3>
+                            <span>90$</span>
+                        </div>
+                        <div class="food-category__item-cart">
+                            <i class='bx bx-cart-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Menu -->
+    <!-- Section  Service-->
+    <section id="service" class="align-items-center">
+        <div class="container">
+            <div class="food-service">
+                <div class="title-service">
+                    <h1>
+                        What We <span class="primary-color">Can Do</span> For You ?
+                    </h1>
+                </div>
+                <div class="item-service">
+                    <div class="col-4 col-md-6  col-xs-12 item-service-wrap">
+                        <div class="img-service bg-img" style="background-image: url('./assets/service1.jpg');"></div>
+                        <button class="btn btn-buffet-service">Buffer Service</button>
+                        <div class="content-service">Provides you with buffet service in the morning, at noon and at night.</div>
+                        <a class="book-service">
+                            <div class="btn btn-book-now">Book Now </div>
+                            <span><i class='bx bx-right-arrow-alt'></i></span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-6 col-xs-12 item-service-wrap active">
+                        <div class="img-service bg-img" style="background-image: url('./assets/service2.jpg');"></div>
+                        <button class="btn btn-buffet-service">Food Delivery</button>
+                        <div class="content-service">Provides you with buffet service in the morning, at noon and at night.</div>
+                        <a class="book-service">
+                            <div class="btn btn-book-now">Book Now </div>
+                            <span><i class='bx bx-right-arrow-alt'></i></span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-6 col-xs-12 item-service-wrap">
+                        <div class="img-service bg-img" style="background-image: url('./assets/service3.jpg');"></div>
+                        <button class="btn btn-buffet-service">Cafeteria</button>
+                        <div class="content-service">Provides you with buffet service in the morning, at noon and at night.</div>
+                        <a class="book-service">
+                            <div class="btn btn-book-now">Book Now </div>
+                            <span><i class='bx bx-right-arrow-alt'></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Service -->
+    <!-- Section Testimonials -->
+    <section id="testimonials" class="align-items-center">
+        <div class="container ">
+            <h1 class="title-testtimonials ">What our <span class="primary-color ">client</span> say</h1>
+            <div class="testtimonials-wrap ">
+                <div>
+                    <div class="slideshow ">
+                        <div class="img-review bg-img " style="background-image: url(./assets/avatar-4.png); "></div>
+                        <div class="item-review">
+                            <div class="text-review ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error deleniti quis aut, perferendis magnam sit veritatis praesentium, unde nemo accusantium deserunt explicabo rerum</div>
+                            <div class="name-review">Thanh Tùng </div>
+                        </div>
+                    </div>
+                    <div class="slideshow ">
+                        <div class="img-review bg-img " style="background-image: url(./assets/avatar-2.png); "></div>
+                        <div class="item-review">
+                            <div class="text-review ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error deleniti quis aut, perferendis magnam sit veritatis praesentium, unde nemo accusantium deserunt explicabo rerum</div>
+                            <div class="name-review">Thanh Tùng </div>
+                        </div>
+                    </div>
+                    <div class="slideshow ">
+                        <div class="img-review bg-img " style="background-image: url(./assets/avatar-3.png); "></div>
+                        <div class="item-review">
+                            <div class="text-review ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error deleniti quis aut, perferendis magnam sit veritatis praesentium, unde nemo accusantium deserunt explicabo rerum</div>
+                            <div class="name-review">Hồng Nhung </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn btn-prev" onclick="plusSlides(-1)"><i class='bx bx-left-arrow'></i></div>
+                <div class="btn btn-next" onclick="plusSlides(1)"><i class='bx bx-right-arrow'></i></div>
+                <div class="col-2 dot-slide">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Testimonials -->
+    <!-- Foooter -->
+    <footer class="footer-food">
+        <img src="./assets/footer-left.png" class="bg-img img-footer" alt="">
+        <div class="footer-container container ">
+            <div class="footer-wrap col-10">
+                <div class="logo-brand-footer">Love Food</div>
+                <div class="social-network">
+                    <span>Follow us :</span>
+                    <span><i class='bx bxl-facebook-circle'></i></span>
+                    <span><i class='bx bxl-instagram'></i></span>
+                    <span><i class='bx bxl-twitter'></i></span>
+                    <span><i class='bx bxl-google-plus' ></i></span>
+                </div>
+                <div class="subscribe">
+                    <input type="text" placeholder="Your Email Address"><button>Subscribe</button>
+                </div>
+                <div class="info-brand">
+                    <div class="col-xs-12">Phone Number <br><span>021234455</span></div>
+                    <div class="col-xs-12">Address <br> <span>23 Bạch Đằng, Q.Hải Châu, Tp.Đà Nẵng</span></div>
+                    <div class="col-xs-12">Drop us a line<br> <span>lovefood@gmail.com</span></div>
+                </div>
+                <div class="copyright">
+                    <div>Made with <i class='bx bxs-heart'></i> by Thanh Tùng</div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/footer-right.png" class="bg-img img-footer" alt="">
+
+    </footer>
+    <!-- End Footer -->
+    <script src="./index.js "></script>
+</body>
+
+</html>
