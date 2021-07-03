@@ -40,14 +40,14 @@ window.onscroll = () => {
 }
 
 //  Nav Menu
-let menuItems = document.getElementsByClassName('nav-menu')
+var menuItems = document.querySelectorAll('.nav-menu')
 
 Array.from(menuItems).forEach((item, index) => {
-        item.onclick = (e) => {
-            let currMenu = document.querySelector('.nav-menu.active')
+        item.addEventListener('click', (e) => {
+            var currMenu = document.querySelector('.nav-menu.active');
             currMenu.classList.remove('active')
             item.classList.add('active')
-        }
+        })
     })
     // Menu Category
 
@@ -58,10 +58,20 @@ let foodCategory = document.querySelector('.food-category');
 let categories = foodCategory.querySelectorAll('button');
 
 Array.from(categories).forEach((item) => {
-    item.onclick = (e) => {
-        let currCat = document.querySelector('.food-category button.active');
+
+    item.addEventListener('click', (e) => {
+        let currCat = foodCategory.querySelector('.food-category button.active');
         currCat.classList.remove('active');
         e.target.classList.add('active');
         foodMenuList.classList = 'food-category__item ' + e.target.getAttribute('data-food-type');
-    }
+    })
+
 })
+
+// Animation
+ScrollReveal({ reset: false });
+ScrollReveal().reveal('.food-category__animation', { interval: 300 });
+ScrollReveal().reveal('.item-wrap', { interval: 300 });
+ScrollReveal().reveal('.item-service-wrap', { interval: 300 });
+
+ScrollReveal().reveal('.about-slogan', { duration: 3000 });

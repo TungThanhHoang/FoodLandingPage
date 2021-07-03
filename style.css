@@ -172,6 +172,7 @@
     #about img {
         border-radius: 2rem;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+        transition: .5s ease-in-out;
     }
     
     .about-slogan {
@@ -180,6 +181,7 @@
         border-radius: 2rem;
         box-shadow: rgba(0, 0, 0, .2) 0px 2px 8px;
         transform: translateX(-10rem);
+        transition: .5s ease-in-out;
     }
     
     .about-slogan h3 {
@@ -308,7 +310,7 @@
         color: var(--white);
     }
     
-    .food-category__item>div {
+    .food-category__item>div.col-3 {
         display: none;
     }
     
@@ -749,8 +751,7 @@
             overflow: hidden
         }
         .item-service-wrap {
-            /* margin: 1rem; */
-            /* margin: 0; */
+            width: calc(50% - 2rem);
         }
         .col-md-1 {
             width: 8.33%;
@@ -841,7 +842,7 @@
             padding: .8rem 3rem;
         }
         .img-about {
-            display: none;
+            visibility: hidden;
         }
         #about {
             padding-top: 5rem;
@@ -857,6 +858,7 @@
             padding: 4rem 1rem;
             width: 100%;
             transform: translateX(0);
+            visibility: hidden;
         }
         .about-slogan h3 {
             text-align: center;

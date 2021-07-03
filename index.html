@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food</title>
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- My library -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./grid.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -111,13 +111,13 @@
                 <h1>What will you <span class="primary-color">eat</span> today ? </h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum laudantium laboriosam veniam. Ipsa voluptatum nisi deserunt inventore rem blanditiis saepe, dolore labore in repellat reiciendis vero voluptate dolores rerum alias?</p>
                 <div class="food-category">
-                    <button class="active" data-food-type="all">All Foods</button>
-                    <button class="" data-food-type="pizza">Pizza</button>
-                    <button data-food-type="noodle">Noodle</button>
-                    <button data-food-type="rice">Rice</button>
-                    <button data-food-type="soup">Soup</button>
+                    <button class=" food-category__animation active" data-food-type="all">All Foods</button>
+                    <button class=" food-category__animation " data-food-type="pizza">Pizza</button>
+                    <button class="food-category__animation" data-food-type="noodle">Noodle</button>
+                    <button class=" food-category__animation " data-food-type="rice">Rice</button>
+                    <button class=" food-category__animation " data-food-type="soup">Soup</button>
                 </div>
-                <div class="food-category__item">
+                <div class="food-category__item all">
                     <div class=" col-3 col-md-6 col-xs-12 item-wrap pizza-type">
                         <div class="img-item__wrap">
                             <div class=" bg-img food-category__item--hover" style="background-image: url('./assets/menu-1.jpg');"></div>
@@ -229,7 +229,7 @@
                     </h1>
                 </div>
                 <div class="item-service">
-                    <div class="col-4 col-md-6  col-xs-12 item-service-wrap">
+                    <div class="col-4   col-xs-12 item-service-wrap">
                         <div class="img-service bg-img" style="background-image: url('./assets/service1.jpg');"></div>
                         <button class="btn btn-buffet-service">Buffer Service</button>
                         <div class="content-service">Provides you with buffet service in the morning, at noon and at night.</div>
@@ -238,7 +238,7 @@
                             <span><i class='bx bx-right-arrow-alt'></i></span>
                         </a>
                     </div>
-                    <div class="col-4 col-md-6 col-xs-12 item-service-wrap active">
+                    <div class="col-4  col-xs-12 item-service-wrap active">
                         <div class="img-service bg-img" style="background-image: url('./assets/service2.jpg');"></div>
                         <button class="btn btn-buffet-service">Food Delivery</button>
                         <div class="content-service">Provides you with buffet service in the morning, at noon and at night.</div>
@@ -247,7 +247,7 @@
                             <span><i class='bx bx-right-arrow-alt'></i></span>
                         </a>
                     </div>
-                    <div class="col-4 col-md-6 col-xs-12 item-service-wrap">
+                    <div class="col-4  col-xs-12 item-service-wrap">
                         <div class="img-service bg-img" style="background-image: url('./assets/service3.jpg');"></div>
                         <button class="btn btn-buffet-service">Cafeteria</button>
                         <div class="content-service">Provides you with buffet service in the morning, at noon and at night.</div>
@@ -329,8 +329,11 @@
         <img src="./assets/footer-right.png" class="bg-img img-footer" alt="">
 
     </footer>
+
     <!-- End Footer -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="./index.js "></script>
+
 </body>
 
 </html>
